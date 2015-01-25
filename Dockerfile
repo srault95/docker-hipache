@@ -8,8 +8,7 @@ RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install --no-instal
   nodejs \
   npm
 
-RUN git clone https://github.com/hipache/hipache/tarball/master /code/hipache
-
+RUN git clone https://github.com/hipache/hipache.git /code/hipache
 RUN npm install -g /code/hipache --production
 
 ENV NODE_ENV production
