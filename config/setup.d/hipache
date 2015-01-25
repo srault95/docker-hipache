@@ -1,0 +1,4 @@
+#!/bin/bash
+
+echo "---> Config circusd postfix ..."
+envtpl /etc/circus.d/hipache.ini.tpl --keep-template --allow-missing
